@@ -1,0 +1,567 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Nidal.sh.turk</title>
+    <meta name="description" content="تعلم التركية بسرعة"/>
+    <meta name="keywords" content="Türkçe öğren,ödevB1 2024,تعلم التركية بسرعة,b1 kütahyada"/>
+    <meta property="og.title" content="تعلم اللغة التركية ">
+    <meta property="og.description" content="Türkçe öğren,ödevB1 2024,تعلم التركية بسرعة,b1 kütahyada"/>
+    <meta property="og.image" content="رابط الصورة" />
+    <meta property="og.image:width" content="1200"/>
+    <meta property="og.image:height" content="630"/>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="apple-touch-icon" href="favicon.png"/>
+   <style>
+    *{ 
+        text-align: center;
+     margin: 0;
+     padding: 0;
+     background-image:linear-gradient(to left,blue,rgb(134, 134, 238),rgb(235, 235, 83));
+    }
+    
+    .head0{
+        width: 100%;
+        height: 150px;
+      margin: 10px;
+      padding: 20px;
+    
+      box-shadow: 0 0 20px 15px rgb(201, 236, 147);
+      display: flex;
+    justify-content: space-evenly;
+    }
+    .head0 a img{
+        width: 50px;
+        margin-top: 50px;
+        
+    }
+    #logo{
+        width:100px;
+        height: 100px;
+     border-radius: 50%;
+     border: 10px solid rgb(43, 162, 226); 
+     animation: logo 2s 300 ease-in-out;
+     
+    }
+    @keyframes logo{
+        
+        20%{border: 20px double green;}
+            
+    }
+    .div-soru{
+        margin: 30px;
+        text-align: center;
+        width: 90%;
+        height: auto;
+        font-size: 25px;
+        font-weight: 300;
+        box-shadow: 0 0 12px 10px grey;
+    display: flex;
+    justify-content: space-evenly;
+    }
+    #puan-1{
+        opacity: 0;
+    }
+    #button1.hide{
+        opacity: 0;
+    }
+    #button1.active{
+        opacity: 1;
+    }
+    #button11.hide{
+        opacity: 0;
+    }
+    #button11.active{
+        opacity: 1;
+    }
+    #puan-2{
+        opacity: 0;
+    }
+    #button2.hide{
+        opacity: 0;
+    }
+    #button2.active{
+        opacity: 1;
+    }
+    #button22.hide{
+        opacity: 0;
+    }
+    #button22.active{
+        opacity: 1;
+    }
+    #puan-3{
+        opacity: 0;
+    }
+    #button3.hide{
+        opacity: 0;
+    }
+    #button3.active{
+        opacity: 1;
+    }
+    #button33.hide{
+        opacity: 0;
+    }
+    #button33.active{
+        opacity: 1;
+    }
+    #puan-4{
+        opacity: 0;
+    }
+    
+    #button4.hide{
+        opacity: 0;
+    }
+    #button4.active{
+        opacity: 1;
+    }
+    #button44.hide{
+        opacity: 0;
+    }
+    #button44.active{
+        opacity: 1;
+    }
+    #puan-5{
+        opacity: 0;
+    }
+    #button5.hide{
+        opacity: 0;
+    }
+    #button5.active{
+        opacity: 1;
+    }
+    #button55.hide{
+        opacity: 0;
+    }
+    #button55.active{
+        opacity: 1;
+    }
+    #puan-6{
+        opacity: 0;
+    }
+    #button6.hide{
+        opacity: 0;
+    }
+    #button6.active{
+        opacity: 1;
+    }
+    #button66.hide{
+        opacity: 0;
+    }
+    #button66.active{
+        opacity: 1;
+    }
+    
+    
+    #puan-7{
+        opacity: 0;
+    }
+    #button7.hide{
+        opacity: 0;
+    }
+    #button7.active{
+        opacity: 1;
+    }
+    #button77.hide{
+        opacity: 0;
+    }
+    #button77.active{
+        opacity: 1;
+    }
+    
+    
+    #puan-8{
+        opacity: 0;
+    }
+    #button8.hide{
+        opacity: 0;
+    }
+    #button8.active{
+        opacity: 1;
+    }
+    #button88.hide{
+        opacity: 0;
+    }
+    #button88.active{
+        opacity: 1;
+    }
+    #puan-9{
+        opacity: 0;
+    }
+    #button9.hide{
+        opacity: 0;
+    }
+    #button9.active{
+        opacity: 1;
+    }
+    #button99.hide{
+        opacity: 0;
+    }
+    #button99.active{
+        opacity: 1;
+    }
+    #puan-10{
+        opacity: 0;
+    }
+    #button10.hide{
+        opacity: 0;
+    }
+    #button10.active{
+        opacity: 1;
+    }
+    #button1010.hide{
+        opacity: 0;
+    }
+    #button1010.active{
+        opacity: 1;
+    }
+    #sonbutton.hide{
+        opacity: 0;
+    }
+    button{
+        width: 100px;
+        height: 100px;
+        border-radius: 40px;
+        margin: 5px;
+        font-size: 20px;
+        font-weight: 700;
+    }
+    button:hover{
+        background: green;
+    }
+    p{
+        font-size: 30px;
+        font-weight: 600;
+    }
+    .div-footer{
+        font-size: 20px;
+       height:auto;
+       padding: 7px;
+    }
+    .div-footer2{
+        width: 95%;
+        height: 100px;
+        box-shadow: 0 0 6px 6px white;
+        margin: 3px;
+       padding:30px ;
+    }
+    @media only screen and (max-width:990px)
+    {
+        *{ 
+            text-align: center;
+         margin: 0;
+         padding: 0;
+         background-image:linear-gradient(to left,blue,rgb(134, 134, 238),rgb(235, 235, 83));
+        }  
+    }
+    @media screen and (min-width:430px) {
+        *{ 
+            text-align: center;
+         margin: 0;
+         padding: 0;
+         background-image:linear-gradient(to left,blue,rgb(134, 134, 238),rgb(235, 235, 83));
+        } 
+    }
+
+    
+    
+   </style>
+</head>
+<body>
+   
+    <head >
+        <nav class="head0" >
+<img  id="logo" src="logo.png" alt="" srcset="">
+    <a href="https://youtu.be/HUjQeF4jsxg"target=blank><img src="youtup.svg" alt="" srcset=""></a>
+</nav>
+    </head>
+    <!----------------------------------------->
+   <div class="puanler"><p>Tam puan: 20</p></div>
+    <div class="div-soru"> 1- Arkadaşım ben..... bir kitap aldı.
+        <button type="button"id="button1" onclick="but1()"> Bana</button>
+        <button type="button" id="button11"onclick="but11()">Beni</button>
+         <p id="puan-1">0 </p>
+    </div>
+   <!--------------------------------------->
+   <div class="div-soru"> 2- Ayşe kanepe ..........müzik dinliyor.
+   <button type="button" id="button2" onclick="but2()"> ya</button>
+   <button type="button" id="button22" onclick="but22()">de</button>
+    <p id="puan-2">0</p>
+</div>
+<!----------------------------------->
+<div class="div-soru"> 3- Sen durak......... bekliyorsun.
+        <button id="button3" onclick="but3()">da</button>
+        <button id="button33" onclick="but33()">ta</button>
+        <p id="puan-3">0</p>
+
+    </div>
+    <!-------------------------------->
+    <div class="div-soru"> 4- köpek....... su vermiş .
+       <button id="button4"onclick="but4()">köpeğe</button>
+       <button id="button44"onclick="but44()">köpeği</button>
+       <p id="puan-4">0</p>
+    </div>
+    <!--------------------------------->
+    <div class="div-soru"> 5- Ali iş......gidiyor .
+        <button id="button5"onclick="but5()">ye</button>
+        <button id="button55"onclick="but55()">e</button>
+        <p id="puan-5">0</p>
+     </div>
+    <!-------------------------------->
+    <div class="div-soru"> 6- Muhammed..... doğru cevab.... ver .
+        <button id="button6"onclick="but6()">e , ı</button>
+        <button id="button66"onclick="but66()">e ,sı</button>
+        <p id="puan-6">0</p>
+     </div>
+     
+    <!--------------------------------->
+    <div class="div-soru"> 7- duvar....kenar....ağaçlar var.
+        <button id="button7"onclick="but7()">ının , sında</button>
+        <button id="button77"onclick="but77()">ın , ında</button>
+        <p id="puan-7">0</p>
+     </div>
+    <!------------------------------------>
+    <div class="div-soru"> 8-  Cuma pazar..... sadece 8 lira.... bir kilo patlıcan aldım.
+        <button id="button8"onclick="but8()">ından , ya</button>
+        <button id="button88"onclick="but88()">ın , sı</button>
+        <p id="puan-8">0</p>
+     </div>
+    <!------------------------------------->
+    <div class="div-soru"> 9-  Her gün üç kız okul... giderken saray... önün... geçer.
+        <button id="button9"onclick="but9()">a ,ın,den </button>
+        <button id="button99"onclick="but99()"> a, ı,de </button>
+        <p id="puan-9">0</p>
+     </div>
+    <!-------------------------------------->
+    <div class="div-soru"> 10- Cimrilik.... sonu kötü.....
+        <button id="button10"onclick="but10()"> in,dür </button>
+        <button id="button1010"onclick="but1010()">ğin, dür</button>
+        <p id="puan-10">0</p>
+     </div>
+    <!------------------------------>
+    <p id="son-puan">0</p>
+    <button id="sonbutton"type="submit" onclick=" puanim()">sonuç</button>
+    <p id="javapın"></p>
+    <hr>
+    <!------------------------>
+    <footer>
+        <div class="div-footer"><address>* Web sitesi şu kişi tarafından oluşturulmuştur: programcı Nidal Al-Shami.</address>
+           <address> *Sitede üç programlama dili kullanılmıştır.</address>
+           <address>* Web sitesi sık aralıklarla yeni etkinliklerle güncellenecektir.</address>
+        </div>
+        <div class="div-footer2">Tüm telif hakları © 2024 Nidal Al-Shami'ye aittir.</div>
+    </footer>
+    <!--------------------------->
+    <script>
+        var button1=document.getElementById("button1")
+        var button11=document.getElementById("button11")
+        var puan_1 =document.getElementById("puan-1")
+        var button2=document.getElementById("button2")
+        var button22=document.getElementById("button22")
+        var puan_2 =document.getElementById("puan-2")
+        var button3=document.getElementById("button3")
+        var button33=document.getElementById("button33")
+        var puan_3 =document.getElementById("puan-3")
+        var button4=document.getElementById("button4")
+        var button44=document.getElementById("button44")
+        var puan_4 =document.getElementById("puan-4")
+        var button5=document.getElementById("button5")
+        var button55=document.getElementById("button55")
+        var puan_5 =document.getElementById("puan-5")
+        var button6=document.getElementById("button6")
+        var button66=document.getElementById("button66")
+        var puan_6 =document.getElementById("puan-6")
+        var button7=document.getElementById("button7")
+        var button77=document.getElementById("button77")
+        var puan_7 =document.getElementById("puan-7")
+        var button8=document.getElementById("button8")
+        var button88=document.getElementById("button88")
+        var puan_8 =document.getElementById("puan-8")
+        var button9=document.getElementById("button9")
+        var button99=document.getElementById("button99")
+        var puan_9 =document.getElementById("puan-9")
+        var button10=document.getElementById("button10")
+        var button1010=document.getElementById("button1010")
+        var puan_10 =document.getElementById("puan-10")
+        var sonbutton =document.getElementById("sonbutton")
+        var son_puan = document.getElementById("son-puan")
+        conter = 0
+    function but1(){
+        conter = conter + 2
+      puan_1.textContent= conter
+      button1.classList.add("hide")
+      button11.classList.add("active") 
+             if( conter = 2){
+                but1() =disaplay;
+            }}
+      
+    function but11(){
+        conter = conter +0 
+        puan_1.textContent= conter
+        button11.classList.add("hide")
+    }
+    ///////////////////////////////////////
+    conter2 = 0
+    function but2(){
+conter2= conter2 + 0
+puan_2.textContent=conter2
+button2.classList.add("hide")
+
+    }
+    function but22(){
+        conter2= conter2 + 2
+        puan_2.textContent=conter2
+        button22.classList.add("hide")
+        button2.classList.add("active")
+        if( conter2 = 2){
+            but22() =disaplay;
+        }
+            }
+            /////////////////////////////////////////
+            conter3 = 0
+    function but3(){
+conter3= conter3 + 0
+puan_3.textContent=conter3
+button3.classList.add("hide")
+
+    }
+    function but33(){
+        conter3= conter2 + 2
+        puan_3.textContent=conter3
+        button33.classList.add("hide")
+        button3.classList.add("active")
+        if( conter3 = 2){
+            but33() =disaplay;
+        }
+            }
+            /////////////////////////////////
+            conter4 = 0
+            function but4(){
+                conter4 = conter4 + 2
+              puan_4.textContent= conter4
+              button4.classList.add("hide")
+              button44.classList.add("active") 
+                     if( conter4= 2){
+                        but4() =disaplay;
+                    }}
+              
+            function but44(){
+                conter4= conter4 +0 
+                puan_4.textContent= conter4
+                button44.classList.add("hide")
+            }
+            ////////////////////////////////////////
+            conter5 = 0
+    function but5(){
+conter5= conter5 + 0
+puan_5.textContent=conter5
+button5.classList.add("hide")
+
+    }
+    conter5 =0
+    function but55(){
+        conter5= conter5 + 2
+        puan_5.textContent=conter5
+        button55.classList.add("hide")
+        button5.classList.add("active")
+        if( conter5 = 2){
+            but55() =disaplay;
+        }
+            }
+            /////////////////////////////////////
+            conter6 = 0
+    function but6(){
+        conter6 = conter6 + 2
+      puan_6.textContent= conter6
+      button6.classList.add("hide")
+      button66.classList.add("active") 
+             if( conter6 = 2){
+                but6() =disaplay;
+            }}
+      
+    function but66(){
+        conter6 = conter6 +0 
+        puan_6.textContent= conter6
+        button66.classList.add("hide")
+    }
+    //////////////////////////////
+    conter7 = 0
+    function but7(){
+        conter7 = conter7 + 0
+      puan_7.textContent= conter7
+      button7.classList.add("hide")
+    }
+      
+    function but77(){
+        conter7 = conter7 + 2
+        puan_7.textContent= conter7
+        button77.classList.add("hide")
+        button7.classList.add("active") 
+             if( conter7 = 2){
+                but77() =disaplay;
+            }
+    }
+    //////////////////////////////////////////////
+    conter8 = 0
+    function but8(){
+        conter8 = conter8 + 2
+      puan_8.textContent= conter8
+      button8.classList.add("hide")
+      button88.classList.add("active") 
+             if( conter8 = 2){
+                but8() =disaplay;
+            }} 
+    function but88(){
+        conter8 = conter8 + 0
+        puan_8.textContent= conter8
+        button88.classList.add("hide")
+        
+    }
+    ///////////////////////////////////////////
+    conter9 = 0
+    function but9(){
+        conter9 = conter9 + 2
+      puan_9.textContent= conter8
+      button9.classList.add("hide")
+      button99.classList.add("active") 
+             if( conter9 = 2){
+                but9() =disaplay;
+            }} 
+    function but99(){
+        conter9 = conter9 + 0
+        puan_9.textContent= conter9
+        button99.classList.add("hide")
+        
+    }
+    ///////////////////////////////////////////
+   conter10 = 0
+    function but10(){
+        conter10 = conter10 + 0
+      puan_10.textContent= conter10
+      button10.classList.add("hide")
+    }
+      
+    function but1010(){
+        conter10 = conter10 + 2
+        puan_10.textContent= conter10
+        button1010.classList.add("hide")
+        button10.classList.add("active") 
+             if( conter10 = 2){
+                but1010() =disaplay;
+            }
+    }
+    //////////////////////////////////////////////
+     son_counter= 0
+     function puanim(){
+        son_counter= conter+ conter2+conter3+conter4+conter5+conter6
+        +conter7+conter8+conter9+conter10
+        son_puan.textContent = son_counter;
+        sonbutton.classList.add("hide")
+            document.getElementById("javapın").innerHTML+=" 1: bana ,2: de ,3: ta ,4: köpeğe ,5: e, 6: e - ı ,7:ın - ında,8:ından - ya,9:a -ın- den ,10:ğin - dür "
+
+        }
+       
+    </script>
+</body>
+</html>

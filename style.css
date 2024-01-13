@@ -1,0 +1,232 @@
+*{ 
+    text-align: center;
+ margin: 0;
+ padding: 0;
+ background-image:linear-gradient(to left,blue,rgb(134, 134, 238),rgb(235, 235, 83));
+}
+
+.head0{
+    width: 100%;
+    height: 150px;
+  margin: 10px;
+  padding: 20px;
+
+  box-shadow: 0 0 20px 15px rgb(201, 236, 147);
+  display: flex;
+justify-content: space-evenly;
+}
+.head0 a img{
+    width: 50px;
+    margin-top: 50px;
+    
+}
+#logo{
+    width:100px;
+    height: 100px;
+ border-radius: 50%;
+ border: 10px solid rgb(43, 162, 226); 
+ animation: logo 2s 300 ease-in-out;
+ 
+}
+@keyframes logo{
+    
+    20%{border: 20px double green;}
+        
+}
+.div-soru{
+    margin: 30px;
+    text-align: center;
+    width: 90%;
+    height: auto;
+    font-size: 25px;
+    font-weight: 300;
+    box-shadow: 0 0 12px 10px grey;
+display: flex;
+justify-content: space-evenly;
+}
+#puan-1{
+    opacity: 0;
+}
+#button1.hide{
+    opacity: 0;
+}
+#button1.active{
+    opacity: 1;
+}
+#button11.hide{
+    opacity: 0;
+}
+#button11.active{
+    opacity: 1;
+}
+#puan-2{
+    opacity: 0;
+}
+#button2.hide{
+    opacity: 0;
+}
+#button2.active{
+    opacity: 1;
+}
+#button22.hide{
+    opacity: 0;
+}
+#button22.active{
+    opacity: 1;
+}
+#puan-3{
+    opacity: 0;
+}
+#button3.hide{
+    opacity: 0;
+}
+#button3.active{
+    opacity: 1;
+}
+#button33.hide{
+    opacity: 0;
+}
+#button33.active{
+    opacity: 1;
+}
+#puan-4{
+    opacity: 0;
+}
+
+#button4.hide{
+    opacity: 0;
+}
+#button4.active{
+    opacity: 1;
+}
+#button44.hide{
+    opacity: 0;
+}
+#button44.active{
+    opacity: 1;
+}
+#puan-5{
+    opacity: 0;
+}
+#button5.hide{
+    opacity: 0;
+}
+#button5.active{
+    opacity: 1;
+}
+#button55.hide{
+    opacity: 0;
+}
+#button55.active{
+    opacity: 1;
+}
+#puan-6{
+    opacity: 0;
+}
+#button6.hide{
+    opacity: 0;
+}
+#button6.active{
+    opacity: 1;
+}
+#button66.hide{
+    opacity: 0;
+}
+#button66.active{
+    opacity: 1;
+}
+
+
+#puan-7{
+    opacity: 0;
+}
+#button7.hide{
+    opacity: 0;
+}
+#button7.active{
+    opacity: 1;
+}
+#button77.hide{
+    opacity: 0;
+}
+#button77.active{
+    opacity: 1;
+}
+
+
+#puan-8{
+    opacity: 0;
+}
+#button8.hide{
+    opacity: 0;
+}
+#button8.active{
+    opacity: 1;
+}
+#button88.hide{
+    opacity: 0;
+}
+#button88.active{
+    opacity: 1;
+}
+#puan-9{
+    opacity: 0;
+}
+#button9.hide{
+    opacity: 0;
+}
+#button9.active{
+    opacity: 1;
+}
+#button99.hide{
+    opacity: 0;
+}
+#button99.active{
+    opacity: 1;
+}
+#puan-10{
+    opacity: 0;
+}
+#button10.hide{
+    opacity: 0;
+}
+#button10.active{
+    opacity: 1;
+}
+#button1010.hide{
+    opacity: 0;
+}
+#button1010.active{
+    opacity: 1;
+}
+#sonbutton.hide{
+    opacity: 0;
+}
+button{
+    width: 100px;
+    height: 100px;
+    border-radius: 40px;
+    margin: 5px;
+    font-size: 20px;
+    font-weight: 700;
+}
+button:hover{
+    background: green;
+}
+p{
+    font-size: 30px;
+    font-weight: 600;
+}
+.div-footer{
+    font-size: 20px;
+   height:auto;
+   padding: 7px;
+}
+.div-footer2{
+    width: 95%;
+    height: 100px;
+    box-shadow: 0 0 6px 6px white;
+    margin: 3px;
+   padding:30px ;
+}
+
